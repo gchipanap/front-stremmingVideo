@@ -1,0 +1,11 @@
+<div> 
+    <button [class.disabled] = "activate"  class="btn btn-danger" (click)=" text_color = 'text-danger'"> " C red </button>
+    <button [class.disabled] = "activate" class="btn btn-success" (click)="text_color = 'text-success'"> C gree </button>
+    <button [class.disabled] = "activate" class="btn btn-primary" (click)="text_color = 'text-primary'"> C blue </button>
+</div>
+
+<p [class] = "text_color"> Cambia de color</p>
+
+<button class="btn btn-secondary" (click)="activate = !activate"> 
+    Activar/Desactivar
+</button>

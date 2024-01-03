@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { UploadVComponent } from './upload-v/upload-v.component';
 import { VideosVComponent } from './videos-v/videos-v.component';
 import { SearchVComponent } from './search-v/search-v.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [

@@ -1,0 +1,5 @@
+<div class="component-container">
+    <h1>Subir video</h1>
+    <input type="file" (change)="onFileSelected($event)" accept=".mp4, .avi, .mkv, .mov, .wmv" required>
+    <button (click)="uploadVideo()" class="btn-custom">Subir</button>
+</div>

@@ -1,20 +1,25 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TestComponent } from './test/test.component';
-import { BotonesComponent } from './botones/botones.component';
+import { UploadVComponent } from './upload-v/upload-v.component';
+import { VideosVComponent } from './videos-v/videos-v.component';
+import { SearchVComponent } from './search-v/search-v.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponent,
-    BotonesComponent
+    UploadVComponent,
+    VideosVComponent,
+    SearchVComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule,
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

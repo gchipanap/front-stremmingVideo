@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BotonesComponent } from './botones.component';
+import { SearchVComponent } from './search-v.component';
 
-describe('BotonesComponent', () => {
-  let component: BotonesComponent;
-  let fixture: ComponentFixture<BotonesComponent>;
+describe('SearchVComponent', () => {
+  let component: SearchVComponent;
+  let fixture: ComponentFixture<SearchVComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [BotonesComponent]
+      declarations: [SearchVComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(BotonesComponent);
+    fixture = TestBed.createComponent(SearchVComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

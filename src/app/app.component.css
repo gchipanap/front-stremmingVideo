@@ -1,0 +1,41 @@
+.main-container {
+    display: flex;
+    height: calc(100vh - 40px);
+}
+  
+.left-panel {
+    width: 50%;
+}
+
+h1 {
+    color: #d0d7e8;
+    text-align: center;
+    background-color: rgb(37, 28, 85);
+    font-family: monospace;
+    font-size: xxx-large;
+    font-weight: bold;
+    font-variant: small-caps slashed-zero;
+}
+  
+
+.right-panel {
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+}
+
+app-search-v {
+    height: 100%;
+    background-color:  rgb(39, 43, 139); 
+    padding: 20px;
+}
+
+app-videos-v {
+    flex-grow: 1;
+    padding-left: 20px;
+}
+
+app-upload-v {
+    height: 20%;
+    background-color:  rgb(39, 43, 139); 
+}

@@ -9,11 +9,14 @@ import { Video } from '../objects';
 })
 export class VideosVComponent {
   videos: Video[] = [];
+<<<<<<< HEAD
   paginatedVideos: Video[] = [];
   currentPage: number = 0;
   pageSize: number = 5; // Cantidad de videos por página
   totalVideos: number = 0;
   
+=======
+>>>>>>> 738dc525b4422a4ae17924e3caf4214a81ddbbba
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
@@ -24,12 +27,16 @@ export class VideosVComponent {
     this.http.get<Video[]>('http://34.41.141.60:8080/api/getAllVideos')
       .subscribe(videos => {
         this.videos = videos;
+<<<<<<< HEAD
         this.totalVideos = videos.length;
         this.setPage(0); // Iniciar en la primera página
+=======
+>>>>>>> 738dc525b4422a4ae17924e3caf4214a81ddbbba
       }, error => {
         console.error('Error al recuperar videos:', error);
       });
   }
+<<<<<<< HEAD
 
   setPage(page: number): void {
     this.currentPage = page;
@@ -49,3 +56,6 @@ export class VideosVComponent {
     }
   }
 }
+=======
+}
+>>>>>>> 738dc525b4422a4ae17924e3caf4214a81ddbbba

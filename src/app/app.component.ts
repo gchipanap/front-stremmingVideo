@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
+<<<<<<< HEAD
 import { HttpClient } from '@angular/common/http';
 import { Video } from './models/video-model';
+=======
+>>>>>>> 738dc525b4422a4ae17924e3caf4214a81ddbbba
 
 @Component({
   selector: 'app-root',
@@ -9,6 +12,7 @@ import { Video } from './models/video-model';
 })
 export class AppComponent {
   title = 'ap1';
+<<<<<<< HEAD
 
   searchText: string = '';
   videos: Video[] = [];
@@ -28,4 +32,6 @@ export class AppComponent {
      
       });
   }
+=======
+>>>>>>> 738dc525b4422a4ae17924e3caf4214a81ddbbba
 }

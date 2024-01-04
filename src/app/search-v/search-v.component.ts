@@ -22,8 +22,11 @@ export class SearchVComponent {
         this.videos = videos;
       }, error => {
         console.error('Error al recuperar videos:', error);
+<<<<<<< HEAD
          alert('Error al recuperar videos. Por favor, inténtalo de nuevo.');
      
+=======
+>>>>>>> 738dc525b4422a4ae17924e3caf4214a81ddbbba
       });
   }
 }

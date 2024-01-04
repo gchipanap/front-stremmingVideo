@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 
 
 <div class="input-group mb-3">
     <input type="file" class="form-control" id="inputGroupFile01" (change)="onFileSelected($event)" accept=".mp4, .avi, .mkv, .mov, .wmv" required>
     <button type="button" class="btn btn-outline-danger" (click)="uploadVideo()">Subir</button>
 </div>
+=======
+<div class="component-container">
+    <h1>Subir video</h1>
+    <input type="file" (change)="onFileSelected($event)" accept=".mp4, .avi, .mkv, .mov, .wmv" required>
+    <button (click)="uploadVideo()" class="btn-custom">Subir</button>
+</div>
+>>>>>>> 738dc525b4422a4ae17924e3caf4214a81ddbbba

@@ -1,0 +1,28 @@
+.component-container {
+    background-color:rgb(39, 43, 139);
+    background-size: cover;
+    padding: 24px;
+  }
+  
+h1 {
+    color: #d0d7e8;
+    font-size: xx-large;
+    font-family: monospace;
+}
+
+.btn-custom {
+    background-color:  rgb(37, 28, 85);
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+}
+
+input[type="file"]::file-selector-button {
+    color: #FF0000;
+  }
+  
+  input[type="file"]:valid::file-selector-button {
+    color: #00FF00;
+  }

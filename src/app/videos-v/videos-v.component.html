@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <div class="pagination-controls">
   <button (click)="previousPage()" [disabled]="currentPage === 0">Anterior</button>
@@ -6,6 +7,11 @@
 <h1 class="fst-italic">Todos los videos</h1>
 <div id="videosContainer">
   <div *ngFor="let video of paginatedVideos" class="video-item">
+=======
+<h1>Videos en el bucket</h1>
+<div id="videosContainer">
+  <div *ngFor="let video of videos" class="video-item">
+>>>>>>> 738dc525b4422a4ae17924e3caf4214a81ddbbba
     <img class="thumbnail" [src]="video.miniaturaUrl" alt="Miniatura">
     <div class="video-info">
       <div class="etiquetas-container">
@@ -14,4 +20,8 @@
       <a class="video-link" [href]="video.videoUrl" target="_blank">Ver Video</a>
     </div>
   </div>
+<<<<<<< HEAD
 </div>
+=======
+</div>
+>>>>>>> 738dc525b4422a4ae17924e3caf4214a81ddbbba

@@ -1,0 +1,49 @@
+<nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand ml-2" href="#">
+      <img src="./assets/logo.png" alt="Logo" width="200" height="50" lass="d-inline-block align-text-top">
+    </a>
+    <!-- <app-seach> -->
+    <div class="input-group">
+      <span class="input-group-text" id="basic-addon3">Buscar Videos por Etiqueta</span>
+      <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4" [(ngModel)]="searchText">
+      <button type="button" class="btn btn-outline-success" (click)="searchVideos()">Buscar</button>
+    </div>
+    <app-upload-v></app-upload-v>
+  </div>
+
+</nav>
+
+<div class="main-container">
+  
+  <div class="left-panel">
+    <div id="searchResults">
+      <div *ngFor="let video of videos" class="video">
+        <img class="thumbnail" [src]="video.miniaturaUrl" alt="Miniatura">
+        <div class="video-info">
+          <div class="etiquetas-container">
+            <span *ngFor="let etiqueta of video.etiquetas" class="etiqueta">{{etiqueta}}</span>
+          </div>
+          <a class="video-link" [href]="video.videoUrl" target="_blank">Ver Video</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="right-panel">
+    <app-videos-v></app-videos-v>
+  </div>
+  
+</div>
+<!--
+<div class="main-container">
+  <div class="left-panel">
+    <a routerLink="/upload"></a>
+    <a routerLink="/videos"></a>
+  </div>
+  <div class="right-panel">
+    <a routerLink="/search"></a>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
+-->

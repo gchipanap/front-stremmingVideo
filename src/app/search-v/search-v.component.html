@@ -1,0 +1,17 @@
+<div class="input-group">
+  <span class="input-group-text" id="basic-addon3">Buscar Videos por Etiqueta</span>
+  <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4" [(ngModel)]="searchText">
+  <button type="button" class="btn btn-outline-success" (click)="searchVideos()">Buscar</button>
+</div>
+
+<div id="searchResults">
+  <div *ngFor="let video of videos" class="video">
+    <img class="thumbnail" [src]="video.miniaturaUrl" alt="Miniatura">
+    <div class="video-info">
+      <div class="etiquetas-container">
+        <span *ngFor="let etiqueta of video.etiquetas" class="etiqueta">{{etiqueta}}</span>
+      </div>
+      <a class="video-link" [href]="video.videoUrl" target="_blank">Ver Video</a>
+    </div>
+  </div>
+</div>

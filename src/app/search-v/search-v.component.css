@@ -1,0 +1,49 @@
+#searchResults {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-container {
+  margin-bottom: 50px;
+}
+
+h1 {
+  color: #d0d7e8;
+  font-size: xx-large;
+  font-family: monospace;
+}
+
+.video {
+  display: flex;
+  align-items: start;
+  margin-bottom: 20px;
+}
+
+.thumbnail {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.video-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.etiquetas-container {
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 5px; 
+}
+
+.etiqueta {
+  background-color: #6fcbd9;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.video-link {
+  color: rgb(183, 183, 211);
+  text-decoration: none;
+  margin-top: 10px;
+}

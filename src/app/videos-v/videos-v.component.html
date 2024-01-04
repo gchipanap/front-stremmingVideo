@@ -1,0 +1,17 @@
+
+<div class="pagination-controls">
+  <button (click)="previousPage()" [disabled]="currentPage === 0">Anterior</button>
+  <button (click)="nextPage()" [disabled]="(currentPage + 1) * pageSize >= totalVideos">Siguiente</button>
+</div>
+<h1 class="fst-italic">Todos los videos</h1>
+<div id="videosContainer">
+  <div *ngFor="let video of paginatedVideos" class="video-item">
+    <img class="thumbnail" [src]="video.miniaturaUrl" alt="Miniatura">
+    <div class="video-info">
+      <div class="etiquetas-container">
+        <span *ngFor="let etiqueta of video.etiquetas" class="etiqueta">{{etiqueta}}</span>
+      </div>
+      <a class="video-link" [href]="video.videoUrl" target="_blank">Ver Video</a>
+    </div>
+  </div>
+</div>
